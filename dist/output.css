@@ -582,6 +582,34 @@ video {
   left: 44.5%;
 }
 
+.bottom-0 {
+  bottom: 0px;
+}
+
+.top-0 {
+  top: 0px;
+}
+
+.left-0 {
+  left: 0px;
+}
+
+.right-0 {
+  right: 0px;
+}
+
+.-z-10 {
+  z-index: -10;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
+.-z-20 {
+  z-index: -20;
+}
+
 .ml-\[-50\%\] {
   margin-left: -50%;
 }
@@ -598,8 +626,20 @@ video {
   margin-top: 1rem;
 }
 
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
+.mt-16 {
+  margin-top: 4rem;
+}
+
 .flex {
   display: flex;
+}
+
+.grid {
+  display: grid;
 }
 
 .h-16 {
@@ -608,6 +648,18 @@ video {
 
 .h-\[90vh\] {
   height: 90vh;
+}
+
+.h-40 {
+  height: 10rem;
+}
+
+.h-24 {
+  height: 6rem;
+}
+
+.h-\[40vh\] {
+  height: 40vh;
 }
 
 .w-\[100\%\] {
@@ -634,12 +686,44 @@ video {
   width: 12%;
 }
 
+.w-40 {
+  width: 10rem;
+}
+
+.w-24 {
+  width: 6rem;
+}
+
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
 .justify-between {
   justify-content: space-between;
 }
 
 .gap-10 {
   gap: 2.5rem;
+}
+
+.gap-5 {
+  gap: 1.25rem;
 }
 
 .rounded-full {
@@ -651,8 +735,47 @@ video {
   background-color: rgb(59 130 246 / var(--tw-bg-opacity));
 }
 
+.bg-stone-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(231 229 228 / var(--tw-bg-opacity));
+}
+
+.bg-neutral-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(115 115 115 / var(--tw-bg-opacity));
+}
+
+.bg-\[rgba\(0\2c 0\2c 0\.1\)\] {
+  --tw-bg-opacity: 1;
+  background-color: rgba(0, 0, 0.1, var(--tw-bg-opacity));
+}
+
+.bg-\[rgba\(0\2c 0\2c 0\2c 0\.1\)\] {
+  background-color: rgba(0,0,0,0.1);
+}
+
+.bg-\[rgba\(0\2c 0\2c 0\2c 0\.9\)\] {
+  background-color: rgba(0,0,0,0.9);
+}
+
+.bg-\[rgba\(0\2c 0\2c 0\2c 0\.3\)\] {
+  background-color: rgba(0,0,0,0.3);
+}
+
+.bg-\[rgba\(0\2c 0\2c 0\2c 0\.5\)\] {
+  background-color: rgba(0,0,0,0.5);
+}
+
+.bg-\[rgba\(0\2c 0\2c 0\2c 0\.6\)\] {
+  background-color: rgba(0,0,0,0.6);
+}
+
 .bg-\[url\(\'\/images\/blackman\.png\'\)\] {
   background-image: url('/images/blackman.png');
+}
+
+.bg-\[url\(\'\/images\/mountains\.png\'\)\] {
+  background-image: url('/images/mountains.png');
 }
 
 .bg-cover {
@@ -695,6 +818,16 @@ video {
   font-size: 20px;
 }
 
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -706,6 +839,11 @@ video {
 .text-stone-500 {
   --tw-text-opacity: 1;
   color: rgb(120 113 108 / var(--tw-text-opacity));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .opacity-80 {
@@ -724,6 +862,16 @@ video {
   to {
     bottom: 30%;
   }
+}
+
+.hover\:bg-blue-700:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(29 78 216 / var(--tw-bg-opacity));
+}
+
+.hover\:text-white:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .active\:opacity-100:active {
