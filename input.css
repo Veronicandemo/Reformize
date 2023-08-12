@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.animate {
+  animation: animate 0.2s ease;
+}
+@keyframes comefromtop {
+  from {
+    bottom: 40%;
+  }
+  to {
+    bottom: 30%;
+  }
+}
