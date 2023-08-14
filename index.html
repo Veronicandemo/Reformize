@@ -3,9 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
     <link href = "/dist/output.css" rel ="stylesheet">
-
     <link href="/style.css" rel="stylesheet" />
     <link rel="stylesheet" href="./input.css" />
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
@@ -13,275 +11,398 @@
    
     <title>ReformRise &mdash; Empowering Change Behind Bars</title>
   </head>
-  <body>
+  <body class="">
     <header class="flex justify-between px-[10%] py-[1%]">
       <a href="" class="" >
         <img src="./images/RR.png" alt="Reformaze Logo" width="5%" height="5%" />
       </a>
-      <nav  class="ml-[-50%]">
+      <nav  class="ml-[-80%]">
         <ul class="flex gap-10">
-          <li><a href="#" class="opacity-80 active:opacity-100">Home</a></li>
-          <li><a href="#meals" class="opacity-80 active:opacity-100">Forum</a></li>
+          <li><a href="#" class="opacity-80 active:opacity-100 text-md font-bold  text-['#555555'] hover:text-black">Home</a></li>
+          <div class="relative inline-flex items-center">
+            <button id="dropdownDelayButton" data-dropdown-toggle="dropdownHover" data-dropdown-delay="0" data-dropdown-trigger="hover" class="text-[#555555] hover:text-black   font-bold rounded-lg text-md  text-center inline-flex items-center" type="button">
+              Our Focus <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+              </svg>
+            </button>
+            <!-- Dropdown menu -->
+            <div id="dropdownDelay" class="z-10  bg-white mt-2  divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 absolute top-full left-0">
+              <ul class="py-2 text-sm text-stone-950 dark:text-stone-950" aria-labelledby="dropdownDelayButton">
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-[#5ED053] dark:hover:text-white">Prison</a>
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-[#5ED053] dark:hover:text-white">Youth</a>
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-[#5ED053] dark:hover:text-white">Community</a>
+                </li>
+               
+              </ul>
+            </div>
+          </div>
+
+          <li><a href="about.html" class="opacity-80 active:opacity-10 text-md font-bold  text-['#555555'] hover:text-black">About Us</a></li>
           <li>
-            <a href="#testimonials" class="opacity-80 active:opacity-100">About</a>
+            <div class="relative inline-flex items-center">
+              <button id="dropdownDelayButton" data-dropdown-toggle="dropdownHover" data-dropdown-delay="0" data-dropdown-trigger="hover" class="text-[#555555] hover:text-black   font-bold rounded-lg text-md  text-center inline-flex items-center" type="button">
+                <a href="projects.html">Projects </a><svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                </svg>
+              </button>
+              <!-- Dropdown menu -->
+              <div id="dropdownDelay" class="z-10  bg-white mt-2  divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 absolute top-full left-0">
+                <ul class="py-2 text-sm text-stone-950 dark:text-stone-950" aria-labelledby="dropdownDelayButton">
+                  <li>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-[#5ED053] dark:hover:text-white">Prison</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-[#5ED053] dark:hover:text-white">Youth</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-[#5ED053] dark:hover:text-white">Community</a>
+                  </li>
+                 
+                </ul>
+              </div>
+            </div>
           </li>
-          <li><a href="#pricing" class="opacity-80 active:opacity-100">Blog</a></li>
+          <li><a href="blog.html" class="opacity-80 active:opacity-100  text-md font-bold  text-['#555555'] hover:text-black">Blog</a></li>
           <li>
-            <a href="#tryfree " class="opacity-80 active:opacity-100">Contact</a>
+            <a href="contact.html" class="opacity-80 active:opacity-100 text-md font-bold  text-['#555555'] hover:text-black">Contact</a>
           </li>
         </ul>
       </nav>
     </header>
     <!-- Hero Section -->
-    <section class="bg-[url('/images/blackman.png')] bg-cover bg-center h-[90vh] bg-no-repeat relative text-center ">
+    <section class="bg-[url('/images/black-businessman-angry.png')] bg-cover bg-bottom h-[80vh] bg-no-repeat relative text-center ">
+      <div class="absolute bg-[rgba(0,0,0,0.6)]  top-0 bottom-0 left-0 right-0 "></div>
+
       <div class=" animate absolute bottom-[30%] w-[100%]">
 
-        <p class="font-bold text-5xl">We help you to learn new Things</p>
-        <button class="bg-blue-500 rounded-full h-16 w-[15%] px-5 mt-10">Start Learning Now</button>
+        <p class="font-bold text-7xl text-white uppercase">Contribute  <span class="font-light">to the</span>  Reform</p>
+        <p class="text-white text-3xl font-light mt-8">To Empower, Reform, and Transform <span class="font-semibold">Lives</span></p>
+        <button class="bg-[#5ED053] rounded-lg h-16 w-[15%] px-5 mt-10 hover:bg-transparent hover:border-2 hover:border-white  text-white uppercase text-sm font-bold tracking-wide">Donate Now</button>
       </div>
     </section>
-    <section class="mt-[50px]">
+    <section class="my-40">
       <div class="relative">
-        <p class="text-center uppercase text-[20px]">Course Categories</p>
+        <p class="text-center uppercase text-[25px] font-semibold">Projects. Support Us</p>
          <hr class="w-[10%] absolute left-[44.5%] "></hr>
       </div>
-        <p class="text-stone-500 text-center mt-4 mb-10">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi cumque
-          earum atque tenetur.
+        <p class="text-stone-500 text-md font-semibold text-center mt-8 mb-14">
+          Partner with ReformRise NGO to revolutionize mental health
+          , rehabilitation, and justice in prisons.<br> Join us in transforming lives today.
         </p>
-        <div class="grid grid-cols-3 gap-10">
-          <div class="flex flex-col items-center text-center justify-center">
-            <div class="bg-stone-200 h-24 w-24 hover:bg-blue-700 hover:text-white rounded-full flex items-center justify-center">
-
-              <ion-icon name="business-outline" class="text-5xl "></ion-icon>
+        <div class="grid grid-cols-3 ml-16 gap-10">
+          <div class="flex flex-col items-center text-center gap-4 border-2 w-96  p-6 justify-center">
+            <div class="bg-stone-200 h-28 w-28 hover:bg-[#302755] rounded-full  hover:text-white  flex items-center justify-center">
+              <ion-icon name="water-outline" class="text-6xl text-[#312755]font-extrabold"></ion-icon>
             </div>
-            <p class="text-semibold text-xl text-center">Business</p>
-            <p>Dignissimos asperiores vitae velit <br> veniam
-               totam fuga molestias <br> accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+            <p class="text-bold text-xl text-center text-[#5ED053]">Access to Mental Health Services</p>
+            <p>With the idea of collaboratin,FRI collaborates with healthcare professionals
+               for assessments and counseling, offering support within prisons.</p>
           </div>
-          <div class="flex flex-col items-center text-center justify-center">
-            <div class="bg-stone-200 h-24 w-24 hover:bg-blue-700 hover:text-white rounded-full flex items-center justify-center">
+          <div class="flex flex-col items-center text-center gap-4 border-2 w-96  p-6 justify-center">
+            <div class="bg-stone-200 h-28 w-28 hover:bg-[#302755] hover:text-white rounded-full flex items-center justify-center">
 
-              <ion-icon name="business-outline" class="text-5xl "></ion-icon>
+              <ion-icon name="school-outline" class="text-6xl font-extrabold"></ion-icon>
             </div>
-            <p class="text-semibold text-xl text-center">Business</p>
-            <p>Dignissimos asperiores vitae velit <br> veniam
-               totam fuga molestias <br> accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+            <p class="text-bold text-xl text-center text-[#5ED053]">Awareness and Education</p>
+            <p>RRI increases mental health awareness in prisons through workshops and training for inmates and staff.
+              staff .</p>
           </div>
-          <div class="flex flex-col items-center text-center justify-center">
-            <div class="bg-stone-200 h-24 w-24 hover:bg-blue-700 hover:text-white rounded-full flex items-center justify-center">
-
-              <ion-icon name="business-outline" class="text-5xl "></ion-icon>
+          <div class="flex flex-col items-center text-center gap-4 border-2 w-96  p-8 justify-center">
+            <div class="bg-stone-200 h-28 w-28 hover:bg-[#302755] hover:text-white rounded-full flex items-center justify-center">
+              <ion-icon name="finger-print-outline" class="text-6xl "></ion-icon>
             </div>
-            <p class="text-semibold text-xl text-center">Business</p>
-            <p>Dignissimos asperiores vitae velit <br> veniam
-               totam fuga molestias <br> accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+            <p class="text-bold text-xl text-center text-[#5ED053]">Advocacy and Policy Reform</p>
+            <p>By advocating for policy reforms,RRI advocates for policy changes to better mental health conditions in prisons, working with authorities.</p>
           </div>
-          <div class="flex flex-col items-center text-center justify-center">
-            <div class="bg-stone-200 h-24 w-24 hover:bg-blue-700 hover:text-white rounded-full flex items-center justify-center">
+          <div class="flex flex-col items-center text-center gap-4 border-2 w-96  p-6 justify-center">
+            <div class="bg-stone-200 h-28 w-28 hover:bg-[#302755] hover:text-white rounded-full flex items-center justify-center">
 
-              <ion-icon name="business-outline" class="text-5xl "></ion-icon>
+              <ion-icon name="git-network-outline" class="text-6xl font-extrabold"></ion-icon>
             </div>
-            <p class="text-semibold text-xl text-center">Business</p>
-            <p>Dignissimos asperiores vitae velit <br> veniam
-               totam fuga molestias <br> accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+            <p class="text-bold text-xl text-center text-[#5ED053] ">Skill Acquisition</p>
+            <p>RRI focuses on skill development to empower inmates with practical abilities for successful reintegration..</p>
           </div>
-          <div class="flex flex-col items-center text-center justify-center">
-            <div class="bg-stone-200 h-24 w-24 hover:bg-blue-700 hover:text-white rounded-full flex items-center justify-center">
-
-              <ion-icon name="business-outline" class="text-5xl "></ion-icon>
+          <div class="flex flex-col items-center text-center gap-4 border-2 w-96  p-6 justify-center">
+            <div class="bg-stone-200 h-28 w-28 hover:bg-[#302755] hover:text-white rounded-full flex items-center justify-center">
+              <ion-icon name="thermometer-outline" class="text-6xl font-extrabold"></ion-icon>
             </div>
-            <p class="text-semibold text-xl text-center">Business</p>
-            <p>Dignissimos asperiores vitae velit <br> veniam
-               totam fuga molestias <br> accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+            <p class="text-bold text-xl text-center text-[#5ED053] ">Rehabilitation Programs</p>
+            <p>RRI aids inmates with mental health issues through vocational training, personal growth, and post-release support.</p>
           </div>
-          <div class="flex flex-col items-center text-center justify-center">
-            <div class="bg-stone-200 h-24 w-24 hover:bg-blue-700 hover:text-white rounded-full flex items-center justify-center">
-
-              <ion-icon name="business-outline" class="text-5xl "></ion-icon>
+          <div class="flex flex-col items-center text-center gap-4 border-2 w-96  p-6 justify-center">
+            <div class="bg-stone-200 h-28 w-28 hover:bg-[#302755] hover:text-white rounded-full flex items-center justify-center">
+              <ion-icon name="barbell-outline" class="text-6xl font-extrabold"></ion-icon>
+              
+  
             </div>
-            <p class="text-semibold text-xl text-center">Business</p>
-            <p>Dignissimos asperiores vitae velit <br> veniam
-               totam fuga molestias <br> accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+            <p class="text-bold text-xl text-center text-[#5ED053] ">Litigation</p>
+            <p>RRI stands for justice, assisting prisoners in seeking legal redress, ensuring their rights are protected and upheld..</p>
           </div>
         </div>
       </div>
     </section>
     <!-- Data and analysis section -->
-    <section class="bg-[url('/images/mountains.png')] -z-20 relative bg-cover bg-center h-[40vh] mt-16 ">
-      <div class="absolute bg-[rgba(0,0,0,0.6)] -z-10 top-0 bottom-0 left-0 right-0 "></div>
+    <section class="bg-[url('/images/mountains.png')]  relative bg-cover bg-center h-[40vh] mt-16 ">
+      <div class="absolute bg-[rgba(0,0,0,0.6)]  top-0 bottom-0 left-0 right-0 "></div>
+      <div class="flex justify-around items-center pt-28">
+      <div class="z-10 flex flex-col items-center gap-6">
+        <div class="text-white flex  flex-col items-center gap-2 justify-center">
+          <ion-icon name="earth-outline" class="text-6xl"></ion-icon>
+          <p class="text-white text-xl ">26</p>
+          <p class="text-white uppercase text-xl font-semibold tracking-wider">Countries</p>
+        </div>
+      </div>
       <div class="z-10">
-        <div class="text-white flex   flex-col items-center justify-center">
-          <ion-icon name="globe-outline"></ion-icon>
-          <p class="text-white">3297</p>
-          <p class="text-white">Foreign Followers</p>
+        <div class="text-white flex   flex-col items-center gap-2 justify-center">
+          <ion-icon name="people-outline" class="text-6xl"></ion-icon>
+          <p class="text-white text-xl ">100</p>
+          <p class="text-white uppercase text-xl font-semibold tracking-wider">Beneficiaries</p>
         </div>
       </div>
+      <div class="z-10">
+        <div class="text-white flex   flex-col items-center gap-2 justify-center">
+          <ion-icon name="shapes-outline" class="text-6xl"></ion-icon>
+          <p class="text-white text-xl ">26</p>
+          <p class="text-white uppercase text-xl font-semibold tracking-wider">Projects</p>
+        </div>
+      </div>
+      
+      </div>
+    </div>
+
     </section>
-    <section>
-      <div>
-        <p>Our Course</p>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere
-          similique laborum debitis maxime maiores doloremque.
-        </p>
+    <section class="mt-28">
+      <div class="relative">
+        <p class="text-center uppercase text-[20px]">Our Philantrophist</p>
+         <hr class="w-[10%] absolute left-[44.5%]"></hr>
       </div>
-      <div>
-        <div>
-          <p>Photo</p>
-          <div>
-            <p>Tittle</p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
-              minus modi, corporis odio amet tempora sapiente nam esse. Impedit,
-              maiores.corporis odio amet tempora sapiente nam esse. Impedit,
-              maiores.
+      <div class="grid grid-cols-2 mt-10 justify-items-center px-64 gap-16">
+        <div class="flex flex-col relative pt-8 justify-center items-center bg-[#F5F5F5] w-[400px]">
+          <img src="./images/regina.jpeg" alt="Laptop image" height='80px' width='100px' class="hover:shadow-[rgba(0,0,0,0)] ml-[5%] absolute -top-12 border-[6px] border-white rounded-full hover:shadow-inner" >
+          <div class="flex flex-col pt-8  justify-center m-6 ">
+            
+            <p class="text-stone-700 w-72">
+              Dedicated to creating positive change and fostering social impact, Regina is a co-founder of ReformRise. 
+              Drawing on over 7 years of experience in Data Science and Education, Reginais a driving force behind Reform's mission.
+
+As a visionary leader, Regina has been instrumental in shaping ReformRise's purpose and initiatives. With a deep-rooted commitment to the training, rehabilitation and reintegration of prisoners into the society, 
+she spearheads efforts to give prisoners the Mucha coveted second chance, striving to make a lasting difference in their lives. 
             </p>
-            <button>Take a Course</button>
+            <p class="text-stone-600 font-semibold text-center">Regina R. Agaren</p>
+            <ul class="flex gap-5 items-center justify-center mt-3">
+              <li><a href="https://www.linkedin.com/in/regina-agaren-9696bab9"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+              <li><a href="https://twitter.com/BendelHybrid"><ion-icon name="logo-twitter"></ion-icon></a></li>
+              <li><a href="https://www.facebook.com/gina.whyte?mibextid=ZbWKwL"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            </ul>
+          
           </div>
-        </div>
-        <div>
-          <p>Photo</p>
-          <div>
-            <p>Tittle</p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
-              minus modi, corporis odio amet tempora sapiente nam esse. Impedit,
-              maiores.corporis odio amet tempora sapiente nam esse. Impedit,
-              maiores.
-            </p>
-            <button>Take a Course</button>
           </div>
+          <div class="flex flex-col relative pt-8 justify-center items-center bg-[#F5F5F5] w-[400px]">
+            <img src="./images/Cilla.jpg" alt="Laptop image" height='100px'  width='100px' class="hover:shadow-[rgba(0,0,0,0)] ml-[5%] absolute border-[6px] border-white -top-12  rounded-full hover:shadow-inner" >
+            <div class="flex flex-col  justify-center m-6 ">
+              <p class="text-stone-700 w-72">
+                As a heart-centered woman entrepreneur, 
+                I have gained tech skills and continue to learn about technology to help keep us all safe in the cyber world. 
+                It is my call to everyone to get involved by teaching about cyber security and how we can protect businesses, ourselves, our family and friends and our countries as a whole.
+                I am a seasoned systems and automations expert, here to support online businesses to scale and protect their assets by operating securely. 
+              </p>
+              <p class="text-stone-600 font-semibold text-center mt-3">Pricilla Azilafu</p>
+              <ul class="flex gap-5 items-center justify-center mt-3">
+                <li><a href="https://www.linkedin.com/in/regina-agaren-9696bab9"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                <li><a href="https://twitter.com/BendelHybrid"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                <li><a href="https://www.facebook.com/gina.whyte?mibextid=ZbWKwL"><ion-icon name="logo-facebook"></ion-icon></a></li>
+              </ul>
+            
+            </div>
+            </div>
+            <div class="flex flex-col relative pt-8 justify-center items-center bg-[#F5F5F5] w-[400px]">
+              <img src="./images/favour.png.jpeg" alt="Laptop image" height='100' width='100px' class="hover:shadow-[rgba(0,0,0,0)] ml-[5%] absolute -top-12  border-[6px] border-white   rounded-full hover:shadow-inner" >
+              <div class="flex flex-col  justify-center m-6 ">
+                
+                <p class="text-stone-700 w-72">
+                  A Passionate Art Director with 5 years of hands-on experience in Advertising Agencies & Fin-techs.
+                   To create various materials to provide information about the company's offerings. Eyes for style, color, and texture. Talented and inventive professional, Certified in Product Design, Digital Marketing & Product management paired with expertise in Photoshop, 
+                  Illustrator, After Effects, and Premiere Pro. Polished in managing and creating business-to-business and 
+                  business-to-consumer marketing materials for web and print.
+                </p>
+                <p class="text-stone-600 font-semibold text-center">Favour Joseph</p>
+                <ul class="flex gap-5 items-center justify-center mt-3">
+                  <li><a href="http://linkedin.com/in/favour-joseph-044315239"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                  <li><a href="https://www.facebook.com/gina.whyte?mibextid=ZbWKwL"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                  <li><a href="https://instagram.com/fjjdcreative?igshid=OGQ5ZDc2ODk2ZA=="><ion-icon name="logo-instagram"></ion-icon></a></li>
+                </ul>
+              
+              </div>
+              </div>
+              <div class="flex flex-col relative pt-8 justify-center items-center bg-[#F5F5F5] w-[400px]">
+                <img src="./images/myimg.jpeg" alt="Laptop image" height='100px' width='100px' class="hover:shadow-[rgba(0,0,0,0)] ml-[5%] absolute -top-12 border-[6px] border-white   rounded-full hover:shadow-inner" >
+                <div class="flex flex-col  justify-center m-6 ">
+                  
+                  <p class="text-stone-700 w-72">
+                     A passionate and driven front-end developer, I thrive on challenges and have a natural curiosity
+                     for understanding complex systems, enabling me to find innovative solutions efficiently.I  always striving for excellence and delivering exceptional results. With a constant thirst for knowledge and staying ahead in the industry, I actively seek new ideas and technologies.
+                     I am an enthusiastic and dedicated  on creating captivating user experiences in the dynamic field of web development.
+                  </p>
+                  <p class="text-stone-600 font-semibold text-center">Ndemo Veronica</p>
+                  <ul class="flex gap-5 items-center justify-center mt-3">
+                    <li><a href="https://www.linkedin.com/in/regina-agaren-9696bab9"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                    <li><a href="https://twitter.com/NdemoVeronica"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                    <li><a href="https://www.facebook.com/gina.whyte?mibextid=ZbWKwL"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                  </ul>
+                
+                </div>
+                </div>
+        
         </div>
-        <div>
-          <p>Photo</p>
-          <div>
-            <p>Tittle</p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
-              minus modi, corporis odio amet tempora sapiente nam esse. Impedit,
-              maiores.corporis odio amet tempora sapiente nam esse. Impedit,
-              maiores.
-            </p>
-            <button>Take a Course</button>
-          </div>
-        </div>
-        <div>
-          <p>Photo</p>
-          <div>
-            <p>Tittle</p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
-              minus modi, corporis odio amet tempora sapiente nam esse. Impedit,
-              maiores.corporis odio amet tempora sapiente nam esse. Impedit,
-              maiores.
-            </p>
-            <button>Take a Course</button>
-          </div>
-        </div>
-        <div>
-          <p>Photo</p>
-          <div>
-            <p>Tittle</p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
-              minus modi, corporis odio amet tempora sapiente nam esse. Impedit,
-              maiores.corporis odio amet tempora sapiente nam esse. Impedit,
-              maiores.
-            </p>
-            <button>Take a Course</button>
-          </div>
-        </div>
+            </div>
       </div>
     </section>
     <!-- Testimonials Sections -->
-    <section>
-      <p>-Testimonials-</p>
+    <section class="bg-[url('/images/mountains.png')] relative bg-cover bg-center -z-30 h-[70vh] mt-16 items-center" >
+      <div class="absolute bg-[rgba(0,0,0,0.7)]  top-0 bottom-0 left-0 right-0 -z-10 "></div>
+      <h2 class="font-extrabold text-center pt-4 text-4xl tracking-wider uppercase text-white">
+      Testimonials
+      </h2>
       <div>
-        <p>Photo</p>
-        <p>Mary Walker</p>
-        <p>Role</p>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur
-          totam amet aspernatur, nostrum repudiandae animi quo minima sapiente
-          et ullam provident iusto ipsa eius officia fuga, tempore blanditiis
-          quam. Sit.totam amet aspernatur, nostrum repudiandae animi quo minima
-          sapiente et ullam provident iusto ipsa eius officia fuga, tempore
-          blanditiis quam. Sit.
-        </p>
-      </div>
-    </section>
-    <!-- Blog and Events section -->
-    <section>
-      <div>
-        <p>Blog and Events</p>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum,
-          praesentium?
-        </p>
-      </div>
-      <div>
-        <div>15 March</div>
-        <div>
-          <p>USA international Trithlon Event</p>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut ab
-            error libero nobis est, repellendus asperiores recusandae ipsum
-            assumenda temporibus.
+
+        <div class="flex flex-col justify-center gap-3 items-center mt-[10%] ">
+          <img src="./images/avatar-anisha.png" width="54px" alt="Anisha Photo">
+          <p class="uppercase tracking-wider text-white font-extrabold"> - John D.</p>
+          <p  class="uppercase tracking-wider text-white font-light">Kenya</p>
+          <p class="w-[560px] text-white text-center">
+            <q>ReformRise gave me a second chance at life. After being unjustly imprisoned for a decade, their litigation program fought tirelessly for my freedom. Thanks to their dedication, 
+              I'm now back with my family, rebuilding my life and making up for lost time. 
+              My gratitude knows no bounds.</q>
           </p>
-          <button>Read More</button>
+        </div>
+        <div class="hidden flex-col justify-center gap-3 items-center mt-[10%] ">
+          <img src="./images/avatar-anisha.png" width="54px" alt="Anisha Photo">
+          <p class="uppercase tracking-wider text-white font-extrabold"> - John D.</p>
+          <p  class="uppercase tracking-wider text-white font-light">Kenya</p>
+          <p class="w-[560px] text-white text-center">
+            <q>ReformRise gave me a second chance at life. After being unjustly imprisoned for a decade, their litigation program fought tirelessly for my freedom. Thanks to their dedication, 
+              I'm now back with my family, rebuilding my life and making up for lost time. 
+              My gratitude knows no bounds.</q>
+          </p>
+        </div>
+        <div class=" hidden flex-col justify-center gap-3 items-center mt-[10%] ">
+          <img src="./images/avatar-anisha.png" width="54px" alt="Anisha Photo">
+          <p class="uppercase tracking-wider text-white font-extrabold"> - John D.</p>
+          <p  class="uppercase tracking-wider text-white font-light">Kenya</p>
+          <p class="w-[560px] text-white text-center">
+            <q>ReformRise gave me a second chance at life. After being unjustly imprisoned for a decade, their litigation program fought tirelessly for my freedom. Thanks to their dedication, 
+              I'm now back with my family, rebuilding my life and making up for lost time. 
+              My gratitude knows no bounds.</q>
+          </p>
         </div>
       </div>
     </section>
-    <footer>
-      <footer class="">
-          <nav class="">
-            <p class="">About Reformise</p>
-            <p>Facilis ipsum reprehenderit nemo molestias. 
-              Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa amet.</p>
-          </nav>
-          <nav class="">
-            <p class="">Learning</p>
-          <ul class="">
-            <li><a class="" href="#">Course</a></li>
-            <li><a class="" href="#">Blog</a></li>
-            <li><a class="" href="#"> Contact</a></li>
-            <li><a class="" href="#">Terms</a></li>
-          </ul>
-        </nav>
-        <nav class="">
-          <p class="">Learn and Grow</p>
-          <ul class="">
-            <li><a class="" href="#"> Blog</a></li>
-            <li><a class="" href="#"> Privacy</a></li>
-            <li><a class="" href="#">Testimonilas</a></li>
-            <li><a class="" href="#">Handbook</a></li>
-            <li><a class="" href="#">Help desk</a></li>
+    <!-- Blog and Events section -->
+    <section class="mt-24 mb-24">
+      <div class="mb-12">
+        <div class="relative">
+          <p class="text-center uppercase text-[20px] ">Blogs and Events</p>
+           <hr class="w-[10%] absolute left-[44.5%] "></hr>
+        </div>
+          <!-- <p class="text-stone-500 text-center mt-4 mb-10">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi cumque
+            earum atque tenetur.
+          </p> -->
+      </div>
+      <div class="flex justify-center gap-5">
+       
+        <div class="flex">
+          <div class="bg-stone-200 h-16  flex justify-center items-center w-16  p-6 rounded-full">
+            <p class="text-center font-extrabold text-stone-600"><ion-icon name="calendar-number-outline" class="text-2xl font-bold"></ion-icon></p></div>
+          <div class="flex ml-3 flex-col gap-3 justify-center items-center">
+            <p class="font-semibold ">Convicts in Africa: A Historical Perspective and Importance of Second Chances</p>
+            <p class="font-light text-stone-500 w-[30rem]">
+              Throughout history, Africa has faced significant challenges in dealing with convicts within its society. 
+From colonial times to the present day, the continent has witnessed various factors contributing to the 
+high rate of incarceration. This blog explores the historical background of convicts in Africa, the 
+hardships they face within and outside prison, and the importance of providing second chances to these 
+individuals. Additionally, it emphasizes the need for organizations that can foster hope and 
+rehabilitation among convicts, creating opportunities for their reintegration into society.
+            </p>
+            <a href="blog.html" class="text-[#5ED053] flex justify-center items-center">Read More <span class="mt-2 ml-2 text-xl"><ion-icon name="chevron-forward-outline"></ion-icon></span></a>
 
-          </ul>
-        </nav>
-        <nav class="nav-col">
-          <p class="footer-heading">Engage Us</p>
-          <ul class="footer-nav">
-            <li><a class="footer-link" href="#"> Blog</a></li>
-            <li><a class="footer-link" href="#"> Privacy</a></li>
-            <li><a class="footer-link" href="#">Testimonilas</a></li>
-            <li><a class="footer-link" href="#">Handbook</a></li>
-            <li><a class="footer-link" href="#">Help desk</a></li>
+        </div>
+       
+        </div> 
+        <div class="flex justify-center ">
+          <div class="bg-stone-200 h-16  flex justify-center items-center w-16  p-6 rounded-full">
+            <p class="text-center font-extrabold text-stone-600"><ion-icon name="calendar-number-outline" class="text-2xl font-bold"></ion-icon></p></div>
+          <div class="flex ml-3 flex-col gap-3 justify-center items-center">
+            <p class="font-semibold -mt-14 ">Pulling Convicts out of the Ditch of Depression and Stigmatization </p>
+            <p class="font-light text-stone-500 w-[30rem]">
+              When we talk about addressing mental health issues, one group that often gets neglected is the prison population.
+              Incarcerated individuals not only face the challenges of confinement but also grapple with the burden of depression,
+               anxiety, and stigmatization. In Africa, where there is already a lack of mental health resources, the plight of convicts sometimes goes unnoticed.
+                However, the Reform Rise Initiative (RRI) has emerged as a beacon of hope...
+            </p>
+            <a href="blog.html" class="text-[#5ED053] flex justify-center items-center">Read More <span class="mt-2 ml-2 text-xl"><ion-icon name="chevron-forward-outline"></ion-icon></span></a>
 
-          </ul>
-        </nav>
-        <nav class="nav-col">
-          <p class="footer-heading">Legal</p>
-          <ul class="footer-nav">
-            <li><a class="footer-link" href="#"> Blog</a></li>
-            <li><a class="footer-link" href="#"> Privacy</a></li>
-            <li><a class="footer-link" href="#">Testimonilas</a></li>
-            <li><a class="footer-link" href="#">Handbook</a></li>
-            <li><a class="footer-link" href="#">Help desk</a></li>
+        </div>
+       
+        </div> 
+      
+      </div>
+    </section>
+    <footer class="grid bg-[url('/images/mountains.png')] text-[#fff] relative bg-cover h-[50vh] grid-cols-5 p-[50px] gap-[10px] z-[-11] py-[150px]">
+      <nav class="">
+        <p class="uppercase mb-[20px] tracking-[1.2px] text-[14px] font-bold">About Reformise</p>
+        <p class="text-[13px]">Facilis ipsum reprehenderit nemo molestias. 
+          Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa amet.</p>
+      </nav>
+      <nav class="">
+        <p class="uppercase mb-[20px] tracking-[1.2px] text-[14px] font-bold">Learning</p>
+      <ul class="">
+        <li><a class="opacity-70 text-[14px] hover:underline " href="#">Course</a></li>
+        <li><a class="opacity-70 text-[14px] hover:underline" href="#">Blog</a></li>
+        <li><a class="opacity-70 text-[14px] hover:underline" href="#"> Contact</a></li>
+        <li><a class="opacity-70 text-[14px] hover:underline" href="#">Terms</a></li>
+      </ul>
+    </nav>
+    <nav class="">
+      <p class="uppercase mb-[20px] tracking-[1.2px] text-[14px] font-bold">Learn and Grow</p>
+      <ul class="">
+        <li><a class="opacity-70 text-[14px] hover:underline" href="#"> Blog</a></li>
+        <li><a class="opacity-70 text-[14px] hover:underline" href="#"> Privacy</a></li>
+        <li><a class="opacity-70 text-[14px] hover:underline" href="#">Testimonilas</a></li>
+        <li><a class="opacity-70 text-[14px] hover:underline" href="#">Handbook</a></li>
+        <li><a class="opacity-70 text-[14px] hover:underline" href="#">Help desk</a></li>
 
-          </ul>
-        </nav>
-         </footer>
+      </ul>
+    </nav>
+    <nav class="nav-col">
+      <p class="footer-heading uppercase mb-[20px] tracking-[1.2px] text-[14px] font-bold">Engage Us</p>
+      <ul class="footer-nav">
+        <li><a class="footer-link opacity-70 text-[14px] hover:underline" href="#"> Blog</a></li>
+        <li><a class="footer-link opacity-70 text-[14px] hover:underline" href="#"> Privacy</a></li>
+        <li><a class="footer-link opacity-70 text-[14px] hover:underline" href="#">Testimonilas</a></li>
+        <li><a class="footer-link opacity-70 text-[14px] hover:underline" href="#">Handbook</a></li>
+        <li><a class="footer-link opacity-70 text-[14px] hover:underline" href="#">Help desk</a></li>
+
+      </ul>
+    </nav>
+    <nav class="nav-col">
+      <p class="footer-heading uppercase mb-[20px] tracking-[1.2px] text-[14px] font-bold">Legal</p>
+      <ul class="footer-nav">
+        <li><a class="footer-link opacity-70 text-[14px] hover:underline" href="#"> Blog</a></li>
+        <li><a class="footer-link opacity-70 text-[14px] hover:underline" href="#"> Privacy</a></li>
+        <li><a class="footer-link opacity-70 text-[14px] hover:underline" href="#">Testimonilas</a></li>
+        <li><a class="footer-link opacity-70 text-[14px] hover:underline" href="#">Handbook</a></li>
+        <li><a class="footer-link opacity-70 text-[14px] hover:underline" href="#">Help desk</a></li>
+
+      </ul>
+    </nav>
+    <div class="absolute top-0 left-0 bottom-0 right-0 bg-[rgba(0,0,0,0.8)] z-[-10]"></div>
+
+     </footer>
   </body>
 </html>
