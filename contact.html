@@ -15,7 +15,7 @@
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
 
-    <title>/about us</title>
+    <title>contact us</title>
   </head>
   <body>
     <header class="flex justify-between px-[10%] py-[1%]">
@@ -65,7 +65,7 @@
             <!-- Dropdown menu -->
             <div
               id="dropdownDelay"
-              class="z-10 bg-white mt-2 divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 absolute top-full left-0"
+              class="z-10 hidden bg-white mt-2 divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 absolute top-full left-0"
             >
               <ul
                 class="py-2 text-sm text-stone-950 dark:text-stone-950"
@@ -113,8 +113,8 @@
                 class="text-[#555555] hover:text-black font-bold rounded-lg text-md text-center inline-flex items-center"
                 type="button"
               >
-                Projects
-                <svg
+                <a href="projects.html">Projects </a
+                ><svg
                   class="w-2.5 h-2.5 ml-2.5"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
@@ -133,7 +133,7 @@
               <!-- Dropdown menu -->
               <div
                 id="dropdownDelay"
-                class="z-10 bg-white mt-2 divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 absolute top-full left-0"
+                class="z-10 bg-white mt-2 hidden divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 absolute top-full left-0"
               >
                 <ul
                   class="py-2 text-sm text-stone-950 dark:text-stone-950"
@@ -173,7 +173,7 @@
           </li>
           <li>
             <a
-              href="contact.html"
+              href="#"
               class="opacity-80 active:opacity-100 text-md font-bold text-['#555555'] hover:text-black"
               >Contact</a
             >
@@ -182,18 +182,20 @@
       </nav>
     </header>
     <section
-      class="bg-[url('/images/mountains.png')] bg-cover bg-center h-[70vh] bg-no-repeat relative text-center"
+      class="bg-[url('/images/prison.jpg')] bg-cover bg-center h-[50vh] bg-no-repeat relative text-center"
     >
       <div
         class="absolute bg-[rgba(0,0,0,0.6)] top-0 bottom-0 left-0 right-0"
       ></div>
 
       <div class="animate absolute bottom-[50%] w-[100%]">
-        <p class="font-bold text-5xl text-white">Contact Us</p>
-        <p class="text-white mt-8">Get in touch with Reformise.co</p>
+        <p class="font-bold text-5xl text-white uppercase">Contact Us</p>
+        <p class="text-white text-xl font-light mt-8">
+          <a href="#contact"> Get in touch with ReformRise.co</a>
+        </p>
       </div>
     </section>
-    <section class="my-24 grid grid-cols-3 ml-24 mr-24">
+    <section id="contact" class="my-24 grid grid-cols-3 ml-24 mr-24">
       <div class="flex flex-col text-stone-700 gap-10">
         <h2 class="text-3xl font bold text-black">South African Office</h2>
         <div class="flex gap-3 items-center">
@@ -262,10 +264,10 @@
       </div>
     </section>
     <footer
-      class="grid mt-0 bg-[url('/images/mountains.png')] text-[#fff] relative bg-cover h-[50vh] w-[100vw] grid-cols-5 p-[50px] gap-[10px] z-[-11] py-[150px]"
+      class="grid mt-0 bg-[#302755] text-[#fff] relative bg-cover h-[50vh] w-[100vw] grid-cols-5 p-[50px] gap-[10px] z-[-11] py-[150px]"
     >
       <div
-        class="absolute top-0 left-0 bottom-0 right-0 bg-[rgba(0,0,0,0.8)] z-[-10]"
+        class="absolute top-0 left-0 bottom-0 right-0 bg-[rgba(0,0,0,0.58)] z-[-10]"
       ></div>
 
       <nav class="">
@@ -423,5 +425,33 @@
         </ul>
       </nav>
     </footer>
+    <script>
+      // Get the button and the dropdown menu elements
+      const dropdownButton = document.getElementById("dropdownDelayButton");
+      const dropdownMenu = document.getElementById("dropdownDelay");
+
+      // Add event listener for button hover
+      dropdownButton.addEventListener("mouseenter", () => {
+        dropdownMenu.classList.remove("hidden");
+      });
+
+      // Add event listener for mouse leave (hide menu)
+      dropdownButton.addEventListener("mouseleave", () => {
+        // Use a delay before hiding the menu to allow time for moving to the menu
+        setTimeout(() => {
+          dropdownMenu.classList.add("hidden");
+        }, 800); // Adjust the delay as needed
+      });
+
+      // Add event listener for menu hover (prevent hiding on menu hover)
+      dropdownMenu.addEventListener("mouseenter", () => {
+        dropdownMenu.classList.remove("hidden");
+      });
+
+      // Add event listener for menu mouse leave (hide menu)
+      dropdownMenu.addEventListener("mouseleave", () => {
+        dropdownMenu.classList.add("hidden");
+      });
+    </script>
   </body>
 </html>
