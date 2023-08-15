@@ -15,7 +15,7 @@
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
 
-    <title>/about us</title>
+    <title>contact us</title>
   </head>
   <body>
     <header class="flex justify-between px-[10%] py-[1%]">
@@ -65,7 +65,7 @@
             <!-- Dropdown menu -->
             <div
               id="dropdownDelay"
-              class="z-10 bg-white mt-2 divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 absolute top-full left-0"
+              class="z-10 hidden bg-white mt-2 divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 absolute top-full left-0"
             >
               <ul
                 class="py-2 text-sm text-stone-950 dark:text-stone-950"
@@ -113,8 +113,8 @@
                 class="text-[#555555] hover:text-black font-bold rounded-lg text-md text-center inline-flex items-center"
                 type="button"
               >
-                Projects
-                <svg
+                <a href="projects.html">Projects </a
+                ><svg
                   class="w-2.5 h-2.5 ml-2.5"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
@@ -133,7 +133,7 @@
               <!-- Dropdown menu -->
               <div
                 id="dropdownDelay"
-                class="z-10 bg-white mt-2 divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 absolute top-full left-0"
+                class="z-10 bg-white mt-2 hidden divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 absolute top-full left-0"
               >
                 <ul
                   class="py-2 text-sm text-stone-950 dark:text-stone-950"
@@ -173,7 +173,7 @@
           </li>
           <li>
             <a
-              href="contact.html"
+              href="#"
               class="opacity-80 active:opacity-100 text-md font-bold text-['#555555'] hover:text-black"
               >Contact</a
             >
@@ -189,7 +189,7 @@
       ></div>
 
       <div class="animate absolute bottom-[50%] w-[100%]">
-        <p class="font-bold text-5xl text-white">Contact Us</p>
+        <p class="font-bold text-5xl text-white uppercase">Contact Us</p>
         <p class="text-white mt-8">Get in touch with Reformise.co</p>
       </div>
     </section>
@@ -423,5 +423,33 @@
         </ul>
       </nav>
     </footer>
+    <script>
+      // Get the button and the dropdown menu elements
+      const dropdownButton = document.getElementById("dropdownDelayButton");
+      const dropdownMenu = document.getElementById("dropdownDelay");
+
+      // Add event listener for button hover
+      dropdownButton.addEventListener("mouseenter", () => {
+        dropdownMenu.classList.remove("hidden");
+      });
+
+      // Add event listener for mouse leave (hide menu)
+      dropdownButton.addEventListener("mouseleave", () => {
+        // Use a delay before hiding the menu to allow time for moving to the menu
+        setTimeout(() => {
+          dropdownMenu.classList.add("hidden");
+        }, 800); // Adjust the delay as needed
+      });
+
+      // Add event listener for menu hover (prevent hiding on menu hover)
+      dropdownMenu.addEventListener("mouseenter", () => {
+        dropdownMenu.classList.remove("hidden");
+      });
+
+      // Add event listener for menu mouse leave (hide menu)
+      dropdownMenu.addEventListener("mouseleave", () => {
+        dropdownMenu.classList.add("hidden");
+      });
+    </script>
   </body>
 </html>

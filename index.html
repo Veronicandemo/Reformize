@@ -26,7 +26,7 @@
               </svg>
             </button>
             <!-- Dropdown menu -->
-            <div id="dropdownDelay" class="z-10  bg-white mt-2  divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 absolute top-full left-0">
+            <div id="dropdownDelay" class="z-10 hidden bg-white mt-2  divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 absolute top-full left-0">
               <ul class="py-2 text-sm text-stone-950 dark:text-stone-950" aria-labelledby="dropdownDelayButton">
                 <li>
                   <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-[#5ED053] dark:hover:text-white">Prison</a>
@@ -51,7 +51,7 @@
                 </svg>
               </button>
               <!-- Dropdown menu -->
-              <div id="dropdownDelay" class="z-10  bg-white mt-2  divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 absolute top-full left-0">
+              <div id="dropdownDelay" class="z-10  bg-white mt-2 hidden  divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 absolute top-full left-0">
                 <ul class="py-2 text-sm text-stone-950 dark:text-stone-950" aria-labelledby="dropdownDelayButton">
                   <li>
                     <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-[#5ED053] dark:hover:text-white">Career Development</a>
@@ -404,5 +404,36 @@ rehabilitation among convicts, creating opportunities for their reintegration in
     <div class="absolute top-0 left-0 bottom-0 right-0 bg-[rgba(0,0,0,0.8)] z-[-10]"></div>
 
      </footer>
+     <script>
+     // Get the button and the dropdown menu elements
+const dropdownButton = document.getElementById('dropdownDelayButton');
+const dropdownMenu = document.getElementById('dropdownDelay');
+
+// Add event listener for button hover
+dropdownButton.addEventListener('mouseenter', () => {
+  dropdownMenu.classList.remove('hidden');
+});
+
+// Add event listener for mouse leave (hide menu)
+dropdownButton.addEventListener('mouseleave', () => {
+  // Use a delay before hiding the menu to allow time for moving to the menu
+  setTimeout(() => {
+    dropdownMenu.classList.add('hidden');
+  }, 800); // Adjust the delay as needed
+});
+
+// Add event listener for menu hover (prevent hiding on menu hover)
+dropdownMenu.addEventListener('mouseenter', () => {
+  dropdownMenu.classList.remove('hidden');
+});
+
+// Add event listener for menu mouse leave (hide menu)
+dropdownMenu.addEventListener('mouseleave', () => {
+  dropdownMenu.classList.add('hidden');
+});
+
+     
+    </script>
+    
   </body>
 </html>

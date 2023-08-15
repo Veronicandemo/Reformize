@@ -26,7 +26,7 @@
               </svg>
             </button>
             <!-- Dropdown menu -->
-            <div id="dropdownDelay" class="z-10  bg-white mt-2  divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 absolute top-full left-0">
+            <div id="dropdownDelay" class="z-10 hidden bg-white mt-2  divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 absolute top-full left-0">
               <ul class="py-2 text-sm text-stone-950 dark:text-stone-950" aria-labelledby="dropdownDelayButton">
                 <li>
                   <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-[#5ED053] dark:hover:text-white">Prison</a>
@@ -46,12 +46,12 @@
           <li>
             <div class="relative inline-flex items-center">
               <button id="dropdownDelayButton" data-dropdown-toggle="dropdownHover" data-dropdown-delay="0" data-dropdown-trigger="hover" class="text-[#555555] hover:text-black   font-bold rounded-lg text-md  text-center inline-flex items-center" type="button">
-                Projects <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                <a href="projects.html">Projects </a><svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                   <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
                 </svg>
               </button>
               <!-- Dropdown menu -->
-              <div id="dropdownDelay" class="z-10  bg-white mt-2  divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 absolute top-full left-0">
+              <div id="dropdownDelay" class="z-10  bg-white mt-2 hidden  divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 absolute top-full left-0">
                 <ul class="py-2 text-sm text-stone-950 dark:text-stone-950" aria-labelledby="dropdownDelayButton">
                   <li>
                     <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-[#5ED053] dark:hover:text-white">Career Development</a>
@@ -67,7 +67,7 @@
               </div>
             </div>
           </li>
-          <li><a href="blog.html" class="opacity-80 active:opacity-100  text-md font-bold  text-['#555555'] hover:text-black">Blog</a></li>
+          <li><a href="#" class="opacity-80 active:opacity-100  text-md font-bold  text-['#555555'] hover:text-black">Blog</a></li>
           <li>
             <a href="contact.html" class="opacity-80 active:opacity-100 text-md font-bold  text-['#555555'] hover:text-black">Contact</a>
           </li>
@@ -192,6 +192,36 @@
           </nav>
       
            </footer>
+           <script>
+            // Get the button and the dropdown menu elements
+       const dropdownButton = document.getElementById('dropdownDelayButton');
+       const dropdownMenu = document.getElementById('dropdownDelay');
+       
+       // Add event listener for button hover
+       dropdownButton.addEventListener('mouseenter', () => {
+         dropdownMenu.classList.remove('hidden');
+       });
+       
+       // Add event listener for mouse leave (hide menu)
+       dropdownButton.addEventListener('mouseleave', () => {
+         // Use a delay before hiding the menu to allow time for moving to the menu
+         setTimeout(() => {
+           dropdownMenu.classList.add('hidden');
+         }, 800); // Adjust the delay as needed
+       });
+       
+       // Add event listener for menu hover (prevent hiding on menu hover)
+       dropdownMenu.addEventListener('mouseenter', () => {
+         dropdownMenu.classList.remove('hidden');
+       });
+       
+       // Add event listener for menu mouse leave (hide menu)
+       dropdownMenu.addEventListener('mouseleave', () => {
+         dropdownMenu.classList.add('hidden');
+       });
+       
+            
+           </script>
       
   </body>
 </html>
